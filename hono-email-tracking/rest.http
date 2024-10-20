@@ -1,0 +1,16 @@
+@BASEURL = http://localhost:3000
+
+### Send mail
+POST {{BASEURL}}/api/send-mail
+Content-Type: application/json
+
+{
+  "emails": ["mail@gmail.com"],
+  "password": "supersecret"
+}
+
+### Track email
+GET {{BASEURL}}/track/track-mail/4829842948
+
+### Get email status
+GET {{BASEURL}}/status/get-mail-status/4829842948
