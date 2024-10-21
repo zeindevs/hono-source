@@ -1,0 +1,10 @@
+@BASEURL = http://localhost:3000
+
+### Create post
+POST {{BASEURL}}/create-post
+Content-Type: application/json
+
+{
+  "title": "Random Post test",
+  "content": "This is the first post ever"
+}
